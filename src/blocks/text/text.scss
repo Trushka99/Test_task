@@ -1,0 +1,74 @@
+.text {
+  font-family: $lato;
+  margin: 0;
+  padding: 0;
+  &_blue {
+    color: $bluetext;
+  }
+  &_grey {
+    color: rgba(195, 195, 195, 1);
+  }
+  &_white {
+    color: white;
+  }
+
+  &_extrasmall {
+    font-size: 13px;
+    font-weight: 400;
+  }
+  &_smal {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  &__normal {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.6px;
+  }
+  &_regular {
+    font-size: 20px;
+    font-weight: 400;
+    @include media("max", "sm") {
+      font-size: 12px;
+    }
+    &_bold {
+      font-weight: 700;
+    }
+  }
+  &_big {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15.6px;
+    color: white;
+    &:hover {
+      color: $bluetext;
+      cursor: pointer;
+    }
+  }
+  &_semi-large {
+    color: white;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 43.2px;
+    text-transform: uppercase;
+    padding: 121px 0 30px 0;
+  }
+  &_large {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 57.6px;
+    text-transform: uppercase;
+    @include media("max", "lg") {
+      font-size: 30px;
+      line-height: 39px;
+    }
+    @include media("max", "md") {
+      font-size: 25px;
+      line-height: 34px;
+    }
+    @include media("max", "sm") {
+      font-size: 15px;
+      line-height: 20px;
+    }
+  }
+}
