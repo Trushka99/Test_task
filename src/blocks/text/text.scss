@@ -5,8 +5,14 @@
   &_blue {
     color: $bluetext;
   }
+  &_button {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
   &_grey {
-    color: rgba(195, 195, 195, 1);
+    color: $body;
   }
   &_white {
     color: white;
@@ -16,7 +22,7 @@
     font-size: 13px;
     font-weight: 400;
   }
-  &_smal {
+  &_small {
     font-size: 16px;
     font-weight: 400;
   }
@@ -25,19 +31,26 @@
     font-weight: 400;
     line-height: 21.6px;
   }
+  &_bold {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    @include media("max", "sm") {
+      font-size: 12px;
+      line-height: 16px;
+
+    }
+  }
   &_regular {
     font-size: 20px;
     font-weight: 400;
     @include media("max", "sm") {
       font-size: 12px;
     }
-    &_bold {
-      font-weight: 700;
-    }
   }
   &_big {
     font-size: 13px;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 15.6px;
     color: white;
     &:hover {
@@ -48,7 +61,7 @@
   &_semi-large {
     color: white;
     font-size: 36px;
-    font-weight: 700;
+    font-weight: 800;
     line-height: 43.2px;
     text-transform: uppercase;
     padding: 121px 0 30px 0;

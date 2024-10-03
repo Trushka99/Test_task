@@ -16,7 +16,11 @@
           <li class="text text_big">ЦЕНЫ</li>
           <li class="text text_big">ОФОРМИТЬ ЗАКАЗ</li>
         </ul>
-        <img class="header__menu" src="./images/menu-svgrepo-com.png" />
+        <img
+          class="header__menu"
+          src="./images/menu-svgrepo-com.png"
+          alt="header-icon"
+        />
       </div>
     </header>
     <main>
@@ -28,13 +32,17 @@
             <span class="text text_blue">adipiscing</span>
           </h1>
           <div>
-            <p></p>
             <ul class="main-image__list">
-              <li class="text text_regular">Totam rem aperiam eaque ipsa</li>
-              <li class="text text_regular">
+              <p class="text text_bold">
+                At vero eos et accusamus et iusto odio dignissimos ducimus!
+              </p>
+              <li class="text text_regular main-image__li">
+                Totam rem aperiam eaque ipsa
+              </li>
+              <li class="text text_regular main-image__li">
                 Sit voluptatem accusantium doloremque laudantium
               </li>
-              <li class="text text_regular">
+              <li class="text text_regular main-image__li">
                 Sed ut perspiciatis, unde omnis iste natus error
               </li>
             </ul>
@@ -50,38 +58,62 @@
         <h1 class="text text_semi-large">
           Оформление <span class="text text_blue">Заказа</span>
         </h1>
-        <p class="text text_regular text_white">
+        <p class="text text__normal text_grey">
           Перед заполнением формы ознакомьтесь с нашей схемой работы!
         </p>
         <div class="order__circles">
           <div class="order__circles-el">
             <div class="order__circle">
-              <img class="order__image" src="./images/glass.svg" />
+              <img
+                src="./images/glass.svg"
+                alt="order-benefits"
+                class="order__image"
+              />
             </div>
-            <p class="text text__small text_white">
-              Lorem ipsum dolor sit amet
-            </p>
+            <p class="text text_small text_white">Lorem ipsum dolor sit amet</p>
           </div>
 
           <div class="order__circles-el">
-            <div class="order__circle"><img src="./images/percent.svg" /></div>
-            <p class="text text__small text_white">
-              Lorem ipsum dolor sit amet
-            </p>
+            <div class="order__circle">
+              <img
+                src="./images/percent.svg"
+                alt="order-benefits"
+                class="order__image"
+              />
+            </div>
+            <p class="text text_small text_white">Lorem ipsum dolor sit amet</p>
           </div>
           <div class="order__circles-el">
-            <div class="order__circle"><img src="./images/file.svg" /></div>
-            <p class="text text__small text_white">Sed do eiusmod tempor</p>
+            <div class="order__circle">
+              <img
+                src="./images/file.svg"
+                alt="order-benefits"
+                class="order__image"
+              />
+            </div>
+            <p class="text text_small text_white">Sed do eiusmod tempor</p>
           </div>
           <div class="order__circles-el">
-            <div class="order__circle"><img src="./images/mail.svg" /></div>
-            <p class="text text__small text_white">
+            <div class="order__circle">
+              <img
+                src="./images/mail.svg"
+                alt="order-benefits"
+                class="order__image"
+              />
+            </div>
+            <p class="text text_small text_white">
               Esse cillum dolore eu fugiat
             </p>
           </div>
           <div class="order__circles-el">
-            <div class="order__circle"><img src="./images/money.svg" /></div>
-            <p class="text text__small text_white">
+            <div class="order__circle">
+              <img
+                src="./images/money.svg"
+                alt="order-benefits"
+                class="order__image"
+              />
+            </div>
+            <p class="text text_small text_white">
               Excepteur sint occaecat cupidatat non proident
             </p>
           </div>
@@ -232,7 +264,7 @@
           <input
             class="order__text1 text text__normal order__textinput"
             type="email"
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+            pattern="^\S+@\S+\.\S+$"
             placeholder="Ваш e-mail"
             name="email"
           />
@@ -251,7 +283,6 @@
             </div>
             <input
               type="range"
-              id="volume"
               name="volume"
               min="0"
               max="100"
@@ -259,18 +290,22 @@
               class="order__range-input"
             />
           </div>
-          <label class="order__label" for="fusk"
+          <label class="order__label text text_button" for="fusk"
             ><div class="order__fileinput">
-              <img src="./images/fileIcon.svg" />
+              <img
+                class="order__atachicon"
+                src="./images/fileIcon.svg"
+                alt="attach-icon"
+              />
               Прикрепить файл
             </div>
           </label>
-          <input id="fusk" type="file" name="photo" style="display: none" />
+          <input id="fusk" type="file" name="photo" class="order__file" />
         </form>
         <button
           type="submit"
           form="myform"
-          class="order__button text_regular text_white"
+          class="order__button text text_button text_white"
         >
           Отправить
         </button>
@@ -283,31 +318,47 @@
         </p>
         <div class="footer__contacts-container">
           <div class="footer__contact-container">
-            <img class="footer__icon" src="./images/QIWI.svg" />
+            <img class="footer__icon" src="./images/QIWI.svg" alt="QIWI-icon" />
             <p class="text text_extrasmall text_grey">Qiwi wallet</p>
           </div>
           <div class="footer__contact-container">
-            <img class="footer__icon" src="./images/YANDEX.svg" />
+            <img
+              class="footer__icon"
+              src="./images/YANDEX.svg"
+              alt="Yandex-money icon"
+            />
             <p class="text text_extrasmall text_grey">Yandex Money</p>
           </div>
           <div class="footer__contact-container">
-            <img class="footer__icon" src="./images/WEB-MONEY.svg" />
+            <img
+              class="footer__icon"
+              src="./images/WEB-MONEY.svg"
+              alt="web-money icon"
+            />
             <p class="text text_extrasmall text_grey">Web Money</p>
           </div>
         </div>
         <div class="footer__contacts-container">
-          <div class="footer__contact-container">
+          <a
+            href="mailto:info@ipsum228.com"
+            target="_blank"
+            class="footer__contact-container"
+          >
             <img
               class="footer__icon"
-              class="footer__icon"
               src="./images/BLUE_MAIL.svg"
+              alt="email icon"
             />
             <p class="text text_extrasmall text_white">info@ipsum228.com</p>
-          </div>
-          <div class="footer__contact-container">
-            <img class="footer__icon" src="./images/ВК.svg" />
+          </a>
+          <a
+            href="https://vk.com/"
+            target="_blank"
+            class="footer__contact-container"
+          >
+            <img class="footer__icon" src="./images/ВК.svg" alt="VK icon" />
             <p class="text text_extrasmall text_white">Мы вконтакте</p>
-          </div>
+          </a>
         </div>
       </div>
     </footer>
